@@ -26,4 +26,5 @@
 .number-input {
   min-width: 30px;
   width: 20px;
+  text-align: end;
 }
