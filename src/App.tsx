@@ -80,8 +80,10 @@ function App() {
         {[0, 1, 2].map((i) => (
           <Equation updater={updateEq(i)} key={i} />
         ))}
-        {/* @ts-ignore */}
-        {eqs.filter((a) => !!a).length === 3 ? solveSystem(eqs) : 0}
+        {eqs.filter((a) => !!a).length === 3
+          ? /* @ts-ignore */
+            solveSystem(eqs)
+          : "Please fill out the system"}
       </div>
     </>
   );
